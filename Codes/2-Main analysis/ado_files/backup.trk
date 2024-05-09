@@ -1,0 +1,204 @@
+* 00000006
+*! version 1.0.0
+* Do not erase or edit this file
+* It is used by Stata to track the ado and help
+* files you have installed.
+
+S http://fmwww.bc.edu/repec/bocode/e
+N estout.pkg
+D  6 May 2024
+U 1
+d 'ESTOUT': module to make regression tables
+d 
+d  estout produces a table of regression results from one or
+d several models for use with spreadsheets, LaTeX, HTML, or a
+d word-processor table. eststo stores a quick copy of the active
+d estimation results for later tabulation. esttab is a wrapper for
+d estout. It displays a pretty looking publication-style regression
+d table without much typing. estadd adds additional results to the
+d e()-returns for one or several models previously fitted and
+d stored. This package subsumes the previously circulated esto,
+d esta, estadd,  and estadd_plus. An earlier version of estout is
+d available  as estout1.
+d 
+d KW: estimates
+d KW: LaTeX
+d KW: HTML
+d KW: word processor
+d KW: output
+d 
+d Requires: Stata version 8.2
+d 
+d Distribution-Date: 20230212
+d 
+d Author: Ben Jann, University of Bern
+d Support: email jann@@soz.unibe.ch
+d 
+f _\_eststo.ado
+f _\_eststo.hlp
+f e\estadd.ado
+f e\estadd.hlp
+f e\estout.ado
+f e\estout.hlp
+f e\eststo.ado
+f e\eststo.hlp
+f e\estpost.ado
+f e\estpost.hlp
+f e\esttab.ado
+f e\esttab.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/c
+N coefplot.pkg
+D  6 May 2024
+U 2
+d 'COEFPLOT': module to plot regression coefficients and other results
+d 
+d   coefplot plots results from estimation commands or Stata
+d matrices. Results from multiple models or matrices can be
+d combined in a single graph. The default behavior of coefplot is
+d to draw markers for coefficients and horizontal spikes for
+d confidence intervals. However, coefplot can also produce various
+d other types of graphs.
+d 
+d KW: graphics
+d KW: coefficients
+d KW: estimation
+d 
+d Requires: Stata version 11
+d 
+d Distribution-Date: 20230225
+d 
+d Author: Ben Jann, University of Bern
+d Support: email jann@@soz.unibe.ch
+d 
+f c\coefplot.ado
+f c\coefplot.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/s
+N scheme-burd.pkg
+D  6 May 2024
+U 3
+d 'SCHEME-BURD': module to provide a ColorBrewer-inspired graphics scheme with qualitative and blue-to-red diverging colors
+d 
+d   The burd scheme is an alternative rendering of the s2color
+d scheme based on Svend Juul's lean scheme and Cynthia Brewer's
+d "RdBu" ColorBrewer scheme. The burd3 to burd11 sub-schemes
+d provide blue-to-red diverging color scales for up to 11 data
+d classes, which might be useful to plot ordered response scales in
+d survey data.
+d 
+d KW: graphics
+d KW: scheme
+d KW: ColorBrewer
+d 
+d Requires: Stata version 8
+d 
+d Distribution-Date: 20130321
+d 
+d Author: François Briatte,  University of Edinburgh
+d Support: email f.briatte@@ed.ac.uk
+d 
+f s\scheme-burd.scheme
+f s\scheme-burd3.scheme
+f s\scheme-burd4.scheme
+f s\scheme-burd5.scheme
+f s\scheme-burd6.scheme
+f s\scheme-burd7.scheme
+f s\scheme-burd8.scheme
+f s\scheme-burd9.scheme
+f s\scheme-burd10.scheme
+f s\scheme-burd11.scheme
+f s\scheme_burd.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/d
+N dbnomics.pkg
+D  6 May 2024
+U 4
+d 'DBNOMICS': module for DB.nomics, the world's economic database
+d 
+d   dbnomics provides a suite of tools to search, browse and import
+d time series data from DB.nomics, the world's economic database
+d (https://db.nomics.world).  DB.nomics is a web-based platform
+d that aggregates and maintains time series data from various
+d statistical  agencies across the world.  dbnomics only works
+d with Stata 14.0 or higher, since it relies on the secure HTTP
+d protocol (https).    dbnomics provides an interface to DB.nomics'
+d RESTful API (https://api.db.nomics.world/apidocs), allowing for
+d the advanced filtering of    data using Stata's native options
+d syntax.
+d 
+d KW: dbnomics
+d KW: data management
+d KW: economic data
+d 
+d Requires: Stata version 14, libjson and moss from SSC (q.v.)
+d 
+d Distribution-Date: 20200618
+d 
+d Author:  Simone Signore, NA
+d Support: email signoresimone@@yahoo.it
+d 
+f d\dbnomics.ado
+f d\dbnomics.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/l
+N libjson.pkg
+D  6 May 2024
+U 5
+d 'LIBJSON': module to provide Mata class library for obtaining and parsing JSON strings into object trees
+d 
+d  The libjson class (library) is designed to be called from the
+d Mata environment to perform tasks related  to obtaining a
+d JavaScript Object Notation (JSON) formatted response from the
+d file or website URL (via a REST API). Most users will want to
+d write an ado file that employs the libjson object to do all the
+d heavy lifting, with  the final tailoring of the output to be
+d handled by the ado file.
+d 
+d KW: Mata
+d KW: JSON
+d KW: JavaScript
+d KW: object trees
+d 
+d Requires: Stata version 11
+d 
+d Distribution-Date: 20140906
+d 
+d Author: Erik Lindsley
+d Support: email ssc@@holocron.org
+d 
+f l\libjson.sthlp
+f l\libjson.mlib
+f l\libjson_source.mata
+e
+S http://fmwww.bc.edu/repec/bocode/m
+N moss.pkg
+D  6 May 2024
+U 6
+d 'MOSS': module to find multiple occurrences of substrings
+d 
+d  moss finds occurrences of substrings matching a pattern in a
+d given string variable. Depending on what is sought and what is
+d found, variables are created giving the count of occurrences
+d (always); the positions of occurrences (whenever any are found);
+d and the exact substrings found (when a regular expression defines
+d a subexpression to be returned).
+d 
+d KW:  data management
+d KW: strings
+d KW: substrings
+d KW: regular expressions
+d 
+d Requires: Stata version 9
+d 
+d Distribution-Date: 20160429
+d 
+d Author: Robert Picard, Durham University
+d Support: email picard@@netbox.com
+d 
+d Author: Nicholas J. Cox
+d Support: email N.J.Cox@@durham.ac.uk
+d 
+f m\moss.ado
+f m\moss.sthlp
+e
