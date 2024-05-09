@@ -1,19 +1,3 @@
----
-title: "Structural Labour Market Change and Gender Inequality in Earnings"
-subtitle: "Reproduction codes"
-author: "Matysiak, A., Hardy, W., van der Velde, L."
-date: today
-format:
-  html:
-    embed-resources: true
-keep-md: true
-title-block-banner: true
----
-
-
-
-## Contents
-
 This repository contains the codes and otputs necessary to reproduce the article *"Structural Labour Market Change and Gender Inequality in Earnings"* by  Matysiak et al. (2024). When using these resources, please provide a citation for:
 
 <to be included when the paper goes online>
